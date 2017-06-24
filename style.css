@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+}
+
+.top{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+
+.top_content{
+    margin: 0px auto;
+    width: 75%;
+    height: 50px;
+    background-color: khaki;
+}
+
+.body{
+    margin: 20px auto;
+    background-color: antiquewhite;
+    width: 75%;
+    height: 1400px;
+}
+
+.body_img{
+    width: 100%;
+    height: 400px;
+    background-color: coral;
+}
+
+.body_content{
+    width: 100%;
+    height: 1100px;
+    background-color: orange;
+}
+
+.body_bulletin{
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+}
+
+.bottom{
+    width: 75%;
+    height: 330px;
+    background-color: purple;
+    margin: 0px auto;
+}
+
+.bottom_content{
+    width: 100%;
+    height: 300px;
+    background-color: lightblue;
+
+}
+
+.bottom_subnav{
+    width: 100%;
+    height: 50px;
+    background-color: mintcream;
+}
