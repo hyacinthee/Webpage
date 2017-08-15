@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--更多详情请参见https://github.com/hyacinthee/web_tasks/blob/master/F0/README.md-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <!--引入jQuery相关的js和css文件，用来适应不同的设备，同时使界面更加美观-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--引入css样式表，调整登录界面属性-->
+    <script src="change.js"></script>
+    <!--引入javascript文件，用来显示隐藏密码-->
+</head>
+<body>
+<div data-role="page" id="back_ground">
+    <div id="top">
+        <!--顶部黑边栏-->
+    </div>
+
+    <div role="main" class="ui-content" id="body">
+        <div id="welcome">  <!--欢迎语句-->
+            <p>~~欢迎加入我们~~</p>
+        </div>
+        <div id="inputText">        <!--输入框-->
+            <form action="Service.php" method="post" >       <!--使用表单，搭建服务器，使用post方式提交-->
+                <!--用户名输入框-->
+                <input type="text" name="user_name" id="user_name" placeholder="用户名" value="">
+                <!--密码的隐藏显示框，同时为其设置属性-->
+                <div style="width: 25%; float: right;">
+                    <label class="ui-shadow ui-btn ui-corner-all ui-mini" id="click" onclick="change()">SHOW</label>
+                </div>
+                <!--添加密码输入框，同时为其设置属性-->
+                <div style="width: 70%; height: 45px;">
+                    <input type="password" name="password" id="password" placeholder="密码" value="">
+                </div>
+                <!--使用复选框确定是否保存密码-->
+                <input type="checkbox" name="checkbox" id="checkbox" checked="">
+                <label for="checkbox" >保存密码</label>
+                <br/>
+                <!--登录和注册按钮-->
+                <button type="submit">登录</button>
+                <button type="button">注册</button>
+                <br/>
+            </form>
+        </div>
+        <div id="information">  <!--显示更多信息-->
+            <p>更多信息请访问http://github.com/hyacinthee/</p>
+        </div>
+    </div>
+
+    <div id="bottom">   <!--底部黑边栏-->
+
+    </div>
+</div>
+</body>
+</html>
